@@ -7,10 +7,13 @@ import {BrowserRouter,Link,Route,Routes} from 'react-router-dom'
 <BrowserRouter>
   <header className='w-full flex justify-between items-center bg-white sm:px-8 px-3 py-3 border-b border-b-[#e6ebf4]'>
 <Link to='/'>
-  <img src={logo} alt='logo' className='w-28 object-contain'/>
+<div className='flex'>
+  <img src={logo} alt='logo' className='w-8 object-contain'/>
+  <p className='mt-1 font-bold '>i-craft</p>
+</div>
 </Link>
 
-<Link to='Create-post' className='font-inter font-medium bg-[#6469ff] text-white px-3 py-1 rounded-md'>
+<Link to='/create-post' className='font-inter font-medium bg-[#0097ff] text-white px-3 py-1 rounded-md  hover:bg-[#007fff]'>
   Create
 </Link>
   </header>

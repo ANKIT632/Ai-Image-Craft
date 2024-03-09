@@ -1,5 +1,5 @@
 import {surpriseMePrompts} from '../constant'
-
+import FileSaver from 'file-saver'
 
 export function getRandomPrompt(promt){
     const randomIndex= Math.floor(Math.random()*surpriseMePrompts.length);
@@ -12,6 +12,8 @@ export function getRandomPrompt(promt){
 
     return randomPromt;
 
+}
 
-
+export async function downloadImage(_id,photo){
+    FileSaver.saveAs(photo,`download-${_id}.jpg`);
 }
