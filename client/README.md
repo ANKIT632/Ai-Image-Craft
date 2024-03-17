@@ -10,4 +10,5 @@ Currently, two official plugins are available:
 
 # use 
 
-- npm install file-saver
+- npm install file-saver.
+- 
