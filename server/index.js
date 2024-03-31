@@ -21,6 +21,8 @@ app.get('/', async (req, res) => {
 });
 
 
+startServer();
+
 const startServer = async () => {
     try {
         connectDB(process.env.MONGODB_URL);
@@ -30,5 +32,3 @@ const startServer = async () => {
         console.log(error)
     }
 }
-
-startServer();
