@@ -21,7 +21,7 @@ app.get('/', async (req, res) => {
 });
 
 
-startServer();
+
 
 const startServer = async () => {
     try {
@@ -32,3 +32,5 @@ const startServer = async () => {
         console.log(error)
     }
 }
+
+startServer();
