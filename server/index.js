@@ -21,12 +21,12 @@ app.get('/', async (req, res) => {
 });
 
 
-
+const PORT = process.env.PORT || 8080;
 
 const startServer = async () => {
     try {
         connectDB(process.env.MONGODB_URL);
-        app.listen(8080, () => console.log('server has started on port 8080 mongodb connected'));
+        app.listen(PORT, () => console.log('server has started on port 8080 mongodb connected'));
     }
     catch (error) {
         console.log(error)
