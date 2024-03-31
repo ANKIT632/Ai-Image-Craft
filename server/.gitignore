@@ -1,6 +1,7 @@
 /node_modules
 /text.txt
-/env
+.env
+
 # Logs
 logs
 *.log
